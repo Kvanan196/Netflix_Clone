@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="nav">
+       <div class="nav__left">
+            <a> <img src="./public/Logonetflix.png" alt="Netflix-Logo" class="nav_logo"></a>
+        </div>
+        
+    </div>
+    <!-- Banner Section -->
+    <header id="banner" >
+        <div id="banner__contents">
+            
+            <h1 id="banner__title"></h1>
+            <div id="banner__buttons">
+                <button id="banner-button"> Play</button>
+                <button id="banner-button"> My List </button>
+            </div>
+            <p id="banner_description"> </p>
+        </div>
+         <div id="banner_fadeBottom"></div>
+    </header>
+    <!-- row-->
+    <div id="headrow">
+        
+    </div>
+    <script>
+        window.addEventListener("scroll", function(){
+        let nav = document.querySelector(".nav");
+        nav.classList.toggle("active", window.scrollY > 0)
+})
+    </script>
+</body>
+</html>
